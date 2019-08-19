@@ -5,6 +5,9 @@
 * Note that in this case we do not create controllers or templates for /login or /logout. This allows you to focus on the 
 SpringSecurityConfig class in an early part of your course.
 
+# Warning if you change this.
+I've not customised cache-controls headers, so your browser state might show stale content if you change responses or 
+out of the box redirects.
 
 # To Run
 mvn spring-boot:run
