@@ -12,6 +12,7 @@ out of the box redirects.
 # To Run
 mvn spring-boot:run
 
+Login creds (but keep reading this doc first) {User: 'user', Password: 'insecure'}
 ## Description
 
 Note that I've just used a flat package structure here to illustrate things for you. 
@@ -50,7 +51,8 @@ Note that these are just dumb GetMappings returning a response body.
 
 ## /public 
 
-(you'll see this without logging in)
+(you'll see this without logging in.)
+Don't stick in a trailing slash, etc
 
 ## /login and /logout
 

@@ -17,8 +17,8 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
     public void configure(HttpSecurity http) throws Exception {
         http.csrf().disable()
                 .authorizeRequests()
-                .anyRequest().authenticated()
                 .antMatchers("/public**").permitAll()
+                .anyRequest().authenticated()
                 .and()
                 .formLogin()
                 .and()
@@ -29,8 +29,8 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(final AuthenticationManagerBuilder auth) throws Exception {
         PasswordEncoder encoder = PasswordEncoderFactories.createDelegatingPasswordEncoder();
         auth.inMemoryAuthentication()
-                .withUser("raf")
-                .password(encoder.encode("password"))
+                .withUser("user")
+                .password(encoder.encode("insecure"))
                 .roles("USER");
     }
 }
