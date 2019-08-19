@@ -1,6 +1,6 @@
 # Example for Mila
 
-These notes should point you at the relvent bits. I've left initializr refs at the bottom to assist you.
+These notes should point you at the relevant parts to construct your own template solution. I've left initializr refs at the bottom to assist you.
 
 # Purpose and Scope
 * Provided as an illustrative example of out of the box spring-security login/out controllers and templates for a colleague doing a spring sec course.
